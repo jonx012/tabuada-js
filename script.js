@@ -11,8 +11,8 @@ function gerar() {
         while (i <= 10) {
             var res = nNumEscolhido * i
             var item = document.createElement("option")
-            item.setAttribute("id", "item")
             item.text = `${nNumEscolhido} x ${i} = ${res}`
+            item.value = `tab${c}`
             tbd.appendChild(item)
             
             i++
